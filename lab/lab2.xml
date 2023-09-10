@@ -1,0 +1,27 @@
+<bank>
+    <costumer>
+        <cid>1</cid>
+        <name>Karina</name>
+        <address>
+            <city>Itahari</city>
+            <pin>567</pin>
+        </address>
+        <phone>980000000</phone>
+        <email>karinarai@gmail.com</email>
+    </costumer>
+    <account>
+        <Aid>123</Aid>
+        <bid>456</bid>
+        <cid>111</cid>
+        <Acctype>Saving</Acctype>
+        <balance>120000</balance>
+    </account>
+    <employee>
+       <empid>876</empid>
+       <name>Ram</name>
+       <designation>Manager</designation>
+       <doj>aug 23 2022</doj>
+       <salary>340000</salary>
+       <address>Itahari</address>
+    </employee>
+</bank>

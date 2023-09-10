@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE student [
+<!ELEMENT student (name,address+, phone, website)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+<!ATTLIST address type(permanent|temporary) #IMPLIED>
+]>
+<student>
+<name>Tove</name>
+<address>
+<permanent>Itahari</permanent>
+<temporary>dharan</temporary>
+</address>
+<phone>980000000</hone>
+<website>studentid</website>
+</note>
