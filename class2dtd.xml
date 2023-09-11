@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE Books[
+<!ELEMENT book(title?, labn+, (zipcode|author), publish*)>
+<!ELEMENT title(#PCDATA)>
+<!ELEMENT labn(#PCDATA)>
+<!ELEMENT zipcode(#PCDATA)>
+<!ELEMENT author(#PCDATA)>
+<!ELEMENT publish(#PCDATA)>
+<!ATTLIST zipcode Zname CDATA #FIXED "23232323">
+<!ATTLIST publish year CDATA #FIXED "1995">
+<!ATTLIST Title name CDATA #IMPLIED>
+<!ATTLIST labn no CDATA #REQUIRED>
+]>
+<Books>
+<book>
+<title name="web">Web</title>
+<labn no="232">23232323</labn>
+<labn no="22">7787</labn>
+<zipcode Zname="232323">aaa</zipcode>
+<author>Ram</author>
+<publish year="1995">1995</publish>
+</book>
+</Books>

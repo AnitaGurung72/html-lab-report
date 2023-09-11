@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE TVSCHEDULE[
+<!ELEMENT TVSCHEDULE(channel+)>
+<!ELEMENT channel (banner,day+)>
+<!ELEMENT banner(#PCDATA)>
+<!ELEMENT day(date,(holiday|programslot)+)>
+<!ELEMENT date(#PCDATA)>
+<!ELEMENT holiday(#PCDATA)>
+<!ELEMENT programslot(Time,Title,Discription)>
+<!ELEMENT Time(#PCDATA)>
+<!ELEMENT Title(#PCDATA)>
+<!ELEMENT Discription(#PCDATA)>
+<!ATTLIST TVSCHEDULE Name CDATA #REQUIRED>
+<!ATTLIST channel Chan CDATA #REQUIRED>
+<!ATTLIST programslot Vtr CDATA #IMPLIED>
+<!ATTLIST title
+Rating CDATA #IMPLIED
+Language CDATA #IMPLIED
+>
+]>
+
+
+
+<TVSCHEDULE Name="dd">
+<channel Name="chan">
+    <banner>Hello</banner>
+    <day>
+        <date>aug 4</date>
+        <holiday>sunday</holiday>
+        <programslot Name="Vtr">
+            <time>10:30</time>
+            <title Rating="" Language="">world</title>
+            <discription>Welcome to our program</discription>
+        </programslot>
+    </day>
+     <day>
+        <date>aug 105</date>
+        <programslot Name="Vtr">
+            <time>10:30</time>
+            <title Rating="5" Language="English">world</title>
+            <discription>Welcome to our program</discription>
+        </programslot>
+    </day>
+    </channel>
+    <channel Name="MTV">
+    <banner>Welcome</banner>
+     <day>
+        <date>set 7</date>
+        <holiday>Monday</holiday>
+        <programslot Name="Vtr">
+            <time>10:30</time>
+            <title Rating="4" Language="Nepali">world</title>
+            <discription>Welcome to our program</discription>
+        </programslot>
+    </day>
+     <day>
+        <date>jun 23</date>
+        <programslot Name="Vtr">
+            <time>10:30</time>
+            <title Rating="3" Language="Chinese">world</title>
+            <discription>Welcome to our program</discription>
+        </programslot>
+    </day>
+    </channel>
+</TVSCHEDULE>
