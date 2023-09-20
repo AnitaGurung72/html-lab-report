@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name ="bank">
+<xs:complexType>
+<xs:sequence>
+<xs:element name ="costumer">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="cid" type="integer"/>
+<xs:element name="name" type="string"/>
+<xs:element name="address" type="string"/>
+<xs:element name="phone" type="integer"/>
+<xs:element name="email" type="email"/>
+    </xs:sequence> 
+  </xs:complexType>
+</xs:element >
+<xs:element name="account">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Aid" type="integer"/>
+<xs:element name="bid" type="integer"/>
+<xs:element name="cid" type="integer"/>
+<xs:element name="Acctype" type="string"/>
+<xs:element name="balance" type="integer"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="employee">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="empid" type="integer"/>
+<xs:element name="name" type="string"/>
+<xs:element name="designation" type="string"/>
+<xs:element name="doj" type="date"/>
+<xs:element name="salary" type="integer"/>
+<xs:element name="address" type="string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+
+
+<bank>
+    xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    <costumer>
+        <cid>1</cid>
+        <name>Karina</name>
+        <address>itahari </address>
+        <phone>980000000</phone>
+        <email>karinarai@gmail.com</email>
+    </costumer>
+    <account>
+        <Aid>123</Aid>
+        <bid>456</bid>
+        <cid>111</cid>
+        <Acctype>Saving</Acctype>
+        <balance>120000</balance>
+    </account>
+    <employee>
+       <empid>876</empid>
+       <name>Ram</name>
+       <designation>Manager</designation>
+       <doj>aug 23 2022</doj>
+       <salary>340000</salary>
+       <address>Itahari</address>
+    </employee>
+</bank>
