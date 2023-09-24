@@ -1,0 +1,19 @@
+<?php
+session_start();
+$_SESSION['username'] = 'john_doe';
+if (isset($_SESSION['username'])) {
+    $username = $_SESSION['username'];
+    echo "Username: " . $username . "<br>";
+} else {
+    echo "Username not found in the session.<br>";
+}
+
+unset($_SESSION['username']);
+
+if (isset($_SESSION['username'])) {
+    echo "Username still exists in the session.<br>";
+} else {
+    echo "Username has been removed from the session.<br>";
+}
+session_unset();
+?>
